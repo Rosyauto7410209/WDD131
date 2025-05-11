@@ -43,6 +43,26 @@ nav ul {
 nav ul li {
     margin: 8px 0;
 }
+
+
+
+
+.links {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.link-item {
+    flex: 1;
+    text-align: center;
+}
+
+
+
+
 @media screen and (min-width: 700px) {
   .gallery {
     grid-template-columns: 1fr 1fr;
@@ -68,8 +88,7 @@ nav ul li {
 @media screen and (min-width: 1000px) {
   .menu {
     display: none;
-  } 
-  
+  }  
 }
 main {
     background-color: beige;
