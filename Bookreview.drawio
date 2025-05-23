@@ -1,0 +1,57 @@
+<mxfile host="65bd71144e">
+    <diagram id="yiTkm0mtpiJ5Lk9bl172" name="Page-1">
+        <mxGraphModel dx="1216" dy="779" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="200" width="340" height="400" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Book Cover" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=21;" parent="3" vertex="1">
+                    <mxGeometry x="105" y="40" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="About us" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="720" y="110" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="All books" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="840" y="110" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
+                    <mxGeometry x="740" y="200" width="200" height="370" as="geometry">
+                        <mxRectangle x="760" y="200" width="50" height="40" as="alternateBounds"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="16" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="7" vertex="1">
+                    <mxGeometry x="25" y="20" width="150" height="260" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Book Filters&lt;div&gt;&lt;span style=&quot;font-size: 15px; background-color: transparent;&quot;&gt;Sort By:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px; background-color: transparent;&quot;&gt;Review:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 15px; background-color: transparent;&quot;&gt;Genre:&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Age group:&lt;/font&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=22;" parent="7" vertex="1">
+                    <mxGeometry x="10" y="20" width="180" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="" style="swimlane;startSize=0;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="140" width="210" height="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Information" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=21;" parent="8" vertex="1">
+                    <mxGeometry x="35" width="130" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Short Summary" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=18;" parent="8" vertex="1">
+                    <mxGeometry x="25" y="160" width="150" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="8" vertex="1">
+                    <mxGeometry y="120" width="210" height="10" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;Good books for You&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="40" width="840" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Book Title&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="360" y="130" width="340" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="" style="swimlane;startSize=0;" vertex="1" parent="1">
+                    <mxGeometry x="120" y="40" width="840" height="570" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Search bar" style="rounded=0;whiteSpace=wrap;html=1;" parent="24" vertex="1">
+                    <mxGeometry x="610" y="22.5" width="220" height="25" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

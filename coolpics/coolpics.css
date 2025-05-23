@@ -37,15 +37,11 @@ nav {
 nav ul {
     list-style-type: none;
     padding: 0;
-    
     text-decoration: underline;
 }
 nav ul li {
     margin: 8px 0;
 }
-
-
-
 
 .links {
     display: flex;
@@ -60,22 +56,27 @@ nav ul li {
     text-align: center;
 }
 
-
-
-
 @media screen and (min-width: 700px) {
-  .gallery {
-    grid-template-columns: 1fr 1fr;
-    display: grid;
-  }
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
 }
+
 @media screen and (min-width: 1000px) {
-  .gallery {
-    grid-template-columns: 1fr 1fr 1fr;
-    display: grid;
-  } 
+    #menu-btn {
+        display: none;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
-.menu {
+#menu-button {
   background-color: #52489c;
   border: none;
   color: white;
@@ -84,11 +85,6 @@ nav ul li {
   text-decoration: none;
   display: inline-block;
   font-size: 1.6em;
-}
-@media screen and (min-width: 1000px) {
-  .menu {
-    display: none;
-  }  
 }
 main {
     background-color: beige;
@@ -115,4 +111,41 @@ img {
 footer {
     color: var(--text-light);
     margin-left: 20px;
+}
+  #menu-button {
+    display: none;
+  }
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+dialog {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+dialog img {
+  display: block;
+  width: 90%;
+  max-height: 100%;
+  margin: 20vh auto;
+  box-shadow: 0 0 10px black;
+  border-radius: 8px;
+}
+.close-viewer {
+  position: absolute;
+  top: 20vh;
+  right: 5vw;
+  background: white;
+  border: none;
+  padding: 0.5em 1em;
+  font-size: 1.2em;
+  font-weight: bold;
+  border-radius: 50%;
+  cursor: pointer;
 }
