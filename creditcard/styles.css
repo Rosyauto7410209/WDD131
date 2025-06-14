@@ -87,7 +87,6 @@ label {
   width: 60%;
   display: inline-block;
 }
-
 #cvc-container {
   position: absolute;
   width: 115px;
@@ -96,14 +95,12 @@ label {
   padding-left: 20px;
   box-sizing: border-box;
 }
-
 #cvc-container p {
   font-size: 6px;
   text-transform: uppercase;
   opacity: 0.6;
   letter-spacing: .5px;
 }
-
 #image-container {
   width: 100%;
   position: relative;
@@ -111,18 +108,15 @@ label {
   margin-bottom: 5px;
   line-height: 55px;
 }
-
 #image-container img {
   position: absolute;
   right: 0;
   top: 0;
 }
-
 #cvc {
   width: 63px;
   margin-bottom: 0;
 }
-
 #submit-btn {
   position: absolute;
   bottom: -55px;
