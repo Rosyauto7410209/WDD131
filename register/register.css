@@ -154,6 +154,15 @@
   button:hover {
     background: #00b33c;
   }
+  
+  .participants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+  }
+
+  .hide { display: none; }
+  
   @media (max-width: 568px) {
     .columns div {
       width: 100%;
