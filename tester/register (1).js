@@ -1,8 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
-let count = 1
-    const addParticipant = document.getElementById("addperson");
+
+    const addParticipant = document.getElementById("add");
     const submitButton = document.getElementById("submitButton");
-    
+
+
     addParticipant.addEventListener("click", function () {
         let participantCount = countParticipants() + 1;
 
@@ -15,11 +16,18 @@ let count = 1
         successMessage = buildInfo()
         successTemplate(successMessage);
     })
+
+
+
+
 });
+
 
 function countParticipants() {
   return document.querySelectorAll(".participant").length;
 }
+
+
 function participantTemplate(count) {
     addParticipant.insertAdjacentHTML("beforebegin", 
         `<section class="participant">
@@ -60,22 +68,32 @@ function participantTemplate(count) {
         </div>
     </section>`);
 }
+
+
 function submitForm(event) {
     event.preventDefault();
     totalFees();
 }
+
+
 function totalFees() {
     let feeElements = document.querySelectorAll("[id^=fee]");
     console.log(feeElements);
     feeElements = [...feeElements];
     const feeTotal = feeElements.reduce((acc, fee) => acc + (Number(fee.value) || 0), 0);
+
     return feeTotal;
 }
+
+
 function buildInfo() {
     const name = document.getElementById("adult_name").value;
     const participantCount = document.querySelectorAll("input[id^=fname]").length;
+    
     return `Thank you ${name} for registering. You have registered ${participantCount} participant${participantCount !== 1 ? "s" : ""} and owe $${totalFees()} in Fees.`;
 }
+
+
 function successTemplate(info) {
     const form = document.querySelector("form");
     form.classList.add('hide')
