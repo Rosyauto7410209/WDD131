@@ -11,13 +11,10 @@ document.addEventListener("DOMContentLoaded", function(){
         successMessage = buildInfo ()
         successTemplate (successMessage)
     })
-
 })
-
 function countparticipants() {
     return document.querySelectorAll ("participant").length
 }
-
 function participanttemplate(count){
     addparticipant.insertAdjacentHTML ("beforebegin",
 
@@ -59,12 +56,10 @@ function participanttemplate(count){
         </div>
         </section>`);
 }
-
 function submitform(event){
         event.preventDefault();
         totalfees();
 }
-
 function totalfees(){
     let feeElements = document.querySelectorAll ("[id^=fee]")
     console.log(feeElements);
@@ -72,7 +67,6 @@ function totalfees(){
     const feeTotal = feeElements.reduce((acc, fee) => acc+(Number(fee.value) || 0), 0);
     return feeTotal
 }
-
 function buildInfo(){
     const name = document.getElementById("adult_name").value;
     const participantcount = document.querySelectorAll("input[id^=fname]").length;
