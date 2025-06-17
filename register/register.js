@@ -1,15 +1,14 @@
 document.addEventListener("DOMContentLoaded", function () {
 let count = 1
-    const addParticipant = document.getElementById("addperson");
+    const addcamper = document.getElementById("addanother");
     const submitButton = document.getElementById("submitButton");
     
-    addParticipant.addEventListener("click", function () {
-        let participantCount = countParticipants() + 1;
+    addcamper.addEventListener("click", function () {
+        let campercount = countcampers() + 1;
 
-        participantTemplate(participantCount);
+        camperTemplate(campercount);
         
     });
-    
     submitButton.addEventListener("click", (event) => {
         event.preventDefault();
         successMessage = buildInfo()
@@ -17,13 +16,16 @@ let count = 1
     })
 });
 
-function countParticipants() {
-  return document.querySelectorAll(".participant").length;
+function countcampers() {
+  return document.querySelectorAll(".camper").length;
 }
-function participantTemplate(count) {
-    addParticipant.insertAdjacentHTML("beforebegin", 
-        `<section class="participant">
-        <p>Participant ${count}</p>
+
+
+
+function camperTemplate(count) {
+    addcamper.insertAdjacentHTML("beforebegin", 
+        `<section class="camper">
+        <p>camper ${count}</p>
         <div class="item">
             <label for="fname${count}"> First Name<span>*</span></label>
             <input id="fname${count}" type="text" name="fname" required>
@@ -59,6 +61,10 @@ function participantTemplate(count) {
             </select>
         </div>
     </section>`);
+
+
+
+
 }
 function submitForm(event) {
     event.preventDefault();
@@ -73,12 +79,11 @@ function totalFees() {
 }
 function buildInfo() {
     const name = document.getElementById("adult_name").value;
-    const participantCount = document.querySelectorAll("input[id^=fname]").length;
-    return `Thank you ${name} for registering. You have registered ${participantCount} participant${participantCount !== 1 ? "s" : ""} and owe $${totalFees()} in Fees.`;
+    const campercount = document.querySelectorAll("input[id^=fname]").length;
+    return `Thank you ${name} for registering. You have registered ${campercount} camper${campercount !== 1 ? "s" : ""} and owe $${totalFees()} in Fees.`;
 }
 function successTemplate(info) {
     const form = document.querySelector("form");
     form.classList.add('hide')
-    document.getElementById("summary").insertAdjacentHTML("beforeend", `<p>${info}</p>`);
- 
+    document.getElementById("summary").insertAdjacentHTML("beforeend", `<p>${info}</p>`); 
 }
