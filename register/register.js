@@ -60,21 +60,23 @@ function participanttemplate(count){
         </section>`);
 }
 
-function submitForm(event) {
-    event.preventDefault();
-    totalFees();
+function submitform(event){
+        event.preventDefault();
+        totalfees();
 }
-function totalFees() {
-    let feeElements = document.querySelectorAll("[id^=fee]");
+
+function totalfees(){
+    let feeElements = document.querySelectorAll ("[id^=fee]")
     console.log(feeElements);
     feeElements = [...feeElements];
-    const feeTotal = feeElements.reduce((acc, fee) => acc + (Number(fee.value) || 0), 0);
-    return feeTotal;
+    const feeTotal = feeElements.reduce((acc, fee) => acc+(Number(fee.value) || 0), 0);
+    return feeTotal
 }
-function buildInfo() {
+
+function buildInfo(){
     const name = document.getElementById("adult_name").value;
     const participantcount = document.querySelectorAll("input[id^=fname]").length;
-    return `Thank you ${name} for registering. You have registered ${participantcount} participant${participantcount !== 1 ? "s" : ""} and owe $${totalFees()} in Fees.`;
+    return `Thank you ${name} for registering. You have registered ${participantcount} participant${participantcount !== 1 ? "s":""} and owe $${totalFees()} in Fees.`;
 }
 function successtemplate(info) {
     const form = document.querySelector("form");
