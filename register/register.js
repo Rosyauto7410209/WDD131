@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(){
     })
 })
 function countparticipants() {
-    return document.querySelectorAll ("participant").length
+    return document.querySelectorAll (".participant").length
 }
 function participanttemplate(count){
     addparticipant.insertAdjacentHTML ("beforebegin",
