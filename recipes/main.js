@@ -13,7 +13,6 @@ function getRandomListEntry (list) {
 console.log (getRandomListEntry (recipes));
 const recipe = getRandomListEntry (recipes);
 console.log (recipeTemplate (recipe));
-
 function tagsTemplate (tags) {
 	const html = tags.map (tag => `<div class="tag">${tag}</div>`).join ("  ")
 
@@ -34,7 +33,7 @@ function ratingTemplate (rating) {
 		}
 	}
 
-	html += `</span>`;
+	html +=`</span>`;
 	return html;
 }
 
@@ -45,7 +44,7 @@ function recipeTemplate (recipe) {
                <div id = "tagscontainer">
                     ${tagsTemplate (recipe.tags)}
                 </div>
-                <p id = "recipename"><a  href= "${recipe.url}">
+                <p id = "recipename"><a href= "${recipe.url}">
                     ${recipe.name}
                 </a></p>
                 ${ratingTemplate (recipe.rating)}
@@ -64,7 +63,7 @@ function init () {
   const recipe = getRandomListEntry (recipes);
   renderrecipes ([recipe]);
 }
-document.getElementById ("search-form").addEventListener ("click",  () => {
+document.getElementById ("search-form").addEventListener ("click",  ()=>{
   const inputBox = document.getElementById ("searchbox");
   const userInput = inputBox.value.toLowerCase ();
   console.log (userInput);
@@ -78,5 +77,4 @@ function filterrecipes (query) {
     recipe.recipeIngredient.join (" ").toLowerCase ().includes (query)
   );
   renderrecipes (filtered);
-}
-init ();
+}init ();
