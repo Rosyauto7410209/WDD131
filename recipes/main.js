@@ -1,10 +1,10 @@
 import recipes from "recipes.mjs";
 
-function random (num) {
+function random (num){
 	return Math.floor(Math.random () * num);
 }
 
-function getRandomListEntry (list) {
+function getRandomListEntry (list){
 	const listLength = list.length;
 	const randomNum = random (listLength);
 	return list[randomNum];
@@ -13,13 +13,13 @@ function getRandomListEntry (list) {
 console.log (getRandomListEntry (recipes));
 const recipe = getRandomListEntry (recipes);
 console.log (recipeTemplate (recipe));
-function tagsTemplate (tags) {
+function tagsTemplate (tags){
 	const html = tags.map (tag => `<div class="tag">${tag}</div>`).join ("  ")
 
 	return html;
 }
 
-function ratingTemplate (rating) {
+function ratingTemplate (rating){
 	let html = `<span
 		class = "rating"
 		role = "img"
@@ -37,7 +37,7 @@ function ratingTemplate (rating) {
 	return html;
 }
 
-function recipeTemplate (recipe) {
+function recipeTemplate (recipe){
 	return `<figure id = "recipe">
             <img src = "${recipe.image}" alt="${recipe.description}">
             <figcaption id = "recipeinfo">
@@ -54,12 +54,12 @@ function recipeTemplate (recipe) {
             </figcaption>
         </figure>`;
 }
-function renderrecipes (recipeList) {
+function renderrecipes (recipeList){
     const container = document.getElementById ("recipecontainer");
     const html = recipeList.map (recipe => recipeTemplate (recipe)).join ("");
     container.innerHTML = html;
 }
-function init () {
+function init (){
   const recipe = getRandomListEntry (recipes);
   renderrecipes ([recipe]);
 }
@@ -69,7 +69,7 @@ document.getElementById ("search-form").addEventListener ("click",  ()=>{
   console.log (userInput);
   filterrecipes (userInput);
 });
-function filterrecipes (query) {
+function filterrecipes (query){
   const filtered = recipes.filter (recipe =>
     recipe.name.toLowerCase ().includes (query) ||
     recipe.tags.some (tag => tag.toLowerCase ().includes (query)) ||
