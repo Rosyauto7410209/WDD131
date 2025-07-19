@@ -31,47 +31,44 @@
                 <h2>About this business</h2>
                 <p>The main focus of this business is to provide new designs to customers that can help with whatever they need.</p>
             </section>
-
-
-
-
-
-
-
-
-
-        <fieldset class="contact">
-          <legend>Send a message</legend>
-          <section class="message">
-            <div class="item">
-              <label for="Name">Name<span></span></label>
-              <input id="Name" type="text" name="Name" value="" required />
-            </div>
-            <div class="email">
-              <label for="email">email<span></span></label>
-              <input id="email" type="text" name="email" value="" required />
-            </div>
-            <div class="item">
-              <label for="message">message<span></span></label>
-              <input id="message" type="text" name="message" value="" required />
-            </div>
-            <div class="btn-block">
-          <button type="submit" id="submitButton">Submit</button>
         </div>
-        </main>
+        
+        <div class="contact">
+        <h2>Send a Message</h2>
+        <form id="sendmessage">
+        <div class="messagename">
+              <label for="name">Name</label>
+              <input type="text"
+                    id="name" 
+                   name="name"  
+                   placeholder="Your Name" required>
+         <span class="error-message" id="nameerror"></span>
+        </div>
 
+        <div class="messageEmail">
+                <label for="email">Email</label>
+                <input type="email"
+                    id="email" 
+                    name="email" 
+                       placeholder="Your Email" required>
+                <span class="error-message" id="emailError"></span>
+        </div>
 
-
-
-
-
-
-
-
-
-
-
-
+        <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" 
+                          name="message" 
+                          placeholder="Your Message" 
+                          rows="5" required></textarea>
+                <span class="error-message" 
+                      id="messageError"></span>
+        </div>
+            <button type="submit" 
+                    class="submit-button">
+              Send Message
+            </button>
+        </form>
+        </div>
             <footer>
             <p>Fox Graphic+Design &copy; 2025 - Sean Durand</p>
             <div class="social">
