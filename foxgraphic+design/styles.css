@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
+
+.logo{
+    width: 10%;
+    border-radius: 50%;
+}
+nav{
+  background-color: #a31818;
+  display: flex;
+  align-items: center;
+}
+nav a{
+  font-size: 20px;
+  padding: 25px 20px;
+  display: block;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  width: 5%;
+}
+nav a:hover{
+  background-color: #ffd995;
+}
+nav img:hover{
+  background-color: #ffd995;
+}
+
+body {
+    height: 100%;
+    background-color: #f6d1b1;
+    font-family: "EB Garamond", serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+footer{
+  background-color: #a31818;
+  color: white;
+  padding: 25px 50px;
+  /* padding-top: 15px; */
+  /* margin-top: 200px; */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer a{
+  color: white;
+  text-decoration: none;
+}
+footer a:hover{
+  color: white;
+  text-decoration: none;
+}
+
+footer .social img{
+  height: 64px;
+  width: 64px;
+}
+footer p {
+  font-size: 1.2em;
+}    
+footer p a:hover{
+  text-decoration: none;;
+}
